@@ -1,0 +1,15 @@
+body {
+    margin: 0px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.left-bar {
+    display: flex;
+    height: 10px;
+}
+
