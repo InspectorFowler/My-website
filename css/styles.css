@@ -1,28 +1,6 @@
-body {
-    margin: 0; padding : 0;
-}
-
-.background_cover {
-    background-image: url("../img/landing_page_background.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-  }
-  
-  .background_cover img {
-    visibility: hidden;
-    width: 100%;
+body, html {
     height: 100%;
-  }
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    padding: 30px;
+    margin : 0;
+    color: #fff;
+    font-family: 'Montserrat';
 }
-
-.left-bar {
-    display: flex;
-    height: 10px;
-}
-
