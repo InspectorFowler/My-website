@@ -1,4 +1,8 @@
 
+/* -------------------------------------------------------------------------
+Top level body and HTML styling 
+----------------------------------------------------------------------------*/
+
 body, html {
     height: 100%;
     color: #fff;
@@ -22,6 +26,10 @@ a {
     z-index: 10;
 }
 
+/* -------------------------------------------------------------------------
+Background, shapes and logo styling
+----------------------------------------------------------------------------*/
+
 #topbg {
     position: absolute;
     margin : -75px;
@@ -35,14 +43,6 @@ a {
     z-index: 3;
 }
 
-#navbar {
-    position: absolute;
-    object-fit: cover;
-    margin : -5%;
-    height: auto; width: auto;
-    z-index: 2;
-}
-
 #rightshape {
     position: absolute; 
     top : 0px; right: 0px;
@@ -51,26 +51,35 @@ a {
     z-index: 1;
 }
 
-nav {
-    padding-top: 1%;
-    padding-right: 1%;
-    
+/* -------------------------------------------------------------------------
+Navigation bar styling
+----------------------------------------------------------------------------*/
+
+#navbar {
+    position: absolute;
+    object-fit: cover;
+    margin : -5%;
+    height: auto; width: auto;
+    z-index: 2;
 }
 
 nav ul {
     list-style-type: none;
+    margin-top: 2%;
+    margin-right: 3%;
     float: right;
-    overflow: auto;
 }
 
 nav ul li {
     float : left;
+    margin-left: 5vw;
+    margin-right: 0.5vw;
+    font-size: 1vw;
+    
 }
 
 nav ul li a {
     color: white;    
-    position: relative;
-    padding-left: 4vw;
-    padding-right: 0.5vw;
-    font-size: 1vw;
+    position: relative;    
+    
 }
