@@ -3,27 +3,23 @@
 Top level body and HTML styling 
 ----------------------------------------------------------------------------*/
 
-body, html {
+::-webkit-scrollbar {
+    width: 0; 
+    background: transparent; 
+}
+
+html {
     height: 100%;
     color: #fff;
     margin: 0;
     font-family: 'Montserrat';
 }
 
-::-webkit-scrollbar {
-    width: 0; 
-    background: transparent; 
-}
-
 body {
+    height: 100%;
     background-color: #0e0e0e;
+    margin: 0;
     overflow-x: hidden;
-}
-
-a {
-    color: #fff;
-    text-decoration: none;
-    z-index: 10;
 }
 
 /* -------------------------------------------------------------------------
@@ -32,7 +28,9 @@ Background, shapes and logo styling
 
 #topbg {
     position: absolute;
-    margin : -75px;
+    margin-top: -20%;
+    margin-left : -5%;
+    margin-right : -5%;
     z-index: 0;    
 }
 
@@ -41,14 +39,6 @@ Background, shapes and logo styling
     margin : 1% 0 0 1%;
     height: auto; width: 10%;     
     z-index: 3;
-}
-
-#rightshape {
-    position: absolute; 
-    top : 0px; right: 0px;
-    margin : -1% -1% auto;
-    height: auto; width: 35%;    
-    z-index: 1;
 }
 
 /* -------------------------------------------------------------------------
@@ -82,9 +72,33 @@ nav ul li a {
     color: white;    
     position: relative;
     transition: all 0.3s ease 0s;
-    cursor: pointer;       
+    cursor: pointer;      
+    text-decoration: none;
+    z-index: 10; 
 }
 
 nav ul li a:hover {
     color: gray;    
+}
+
+/* -------------------------------------------------------------------------
+Landing page - section 1 styling
+----------------------------------------------------------------------------*/
+
+#rightshape {
+    position: absolute; 
+    top : 0px; right: 0px;
+    margin : -1% -1% auto;
+    height: auto; width: 30%;    
+    z-index: 1;
+}
+
+#lp_dist {
+    
+    display: block;
+    position: absolute; 
+    margin-top : 15%; 
+    margin-left: 20%;
+    height: auto; width: 35%;    
+    z-index: 1;
 }
