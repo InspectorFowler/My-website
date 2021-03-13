@@ -28,7 +28,7 @@ Background, shapes and logo styling
 
 #topbg {
     position: absolute;
-    margin-top: -20%;
+    margin-top: -27%;
     margin-left : -5%;
     margin-right : -5%;
     z-index: 0;    
@@ -89,7 +89,7 @@ Landing page - section 1 styling
     position: absolute; 
     top : 0px; right: 0px;
     margin : -1% -1% auto;
-    height: auto; width: 30%;    
+    height: auto; width: 29%;    
     z-index: 1;
 }
 
@@ -97,8 +97,48 @@ Landing page - section 1 styling
     
     display: block;
     position: absolute; 
-    margin-top : 15%; 
+    margin-top : 12%; 
     margin-left: 20%;
-    height: auto; width: 35%;    
+    height: auto; width: 30%;    
     z-index: 1;
+}
+
+.page-label{
+    font-weight: 600;
+    font-size: 3.3vw;    
+    text-decoration: none;
+    position:absolute;
+    margin-top : 31%; 
+    margin-left: 18%;    
+}
+
+p1{
+    position: relative;
+    z-index: 10;
+    margin: 0;
+    position: 0; 
+}
+
+p2{
+    position: relative;
+    display:block;
+    margin-top: -12%;
+    left: 1%;
+    z-index: 9; 
+    background: #FFBE0B;
+    background: -webkit-linear-gradient(to right, #FFBE0B 0%, #D00000 54%, #1A1A1A 100%);
+    background: -moz-linear-gradient(to right, #FFBE0B 0%, #D00000 54%, #1A1A1A 100%);
+    background: linear-gradient(to right, #FFBE0B 0%, #D00000 54%, #1A1A1A 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+p3{
+    position: absolute;
+    font-weight: 300;
+    font-size: 0.9vw;    
+    text-decoration: none;
+    margin-top : 35.5%; 
+    margin-left: 28.5%;
+    z-index: 10; 
 }
