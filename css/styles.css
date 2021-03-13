@@ -23,22 +23,14 @@ body {
 }
 
 /* -------------------------------------------------------------------------
-Background, shapes and logo styling
+logo styling
 ----------------------------------------------------------------------------*/
-
-#topbg {
-    position: absolute;
-    margin-top: -27%;
-    margin-left : -5%;
-    margin-right : -5%;
-    z-index: 0;    
-}
 
 #logo {
     position: absolute;
     margin : 1% 0 0 1%;
     height: auto; width: 10%;     
-    z-index: 3;
+    z-index: 4;
 }
 
 /* -------------------------------------------------------------------------
@@ -50,7 +42,7 @@ Navigation bar styling
     object-fit: cover;
     margin : -5%;
     height: auto; width: auto;
-    z-index: 2;
+    z-index: 3;
 }
 
 nav ul {
@@ -82,15 +74,23 @@ nav ul li a:hover {
 }
 
 /* -------------------------------------------------------------------------
-Landing page - section 1 styling
+Landing page - top section styling
 ----------------------------------------------------------------------------*/
+
+#topbg {
+    position: absolute;
+    margin-top: -27%;
+    margin-left : -5%;
+    margin-right : -5%;
+    z-index: 1;    
+}
 
 #rightshape {
     position: absolute; 
     top : 0px; right: 0px;
     margin : -1% -1% auto;
     height: auto; width: 29%;    
-    z-index: 1;
+    z-index: 2;
 }
 
 #lp_dist {
@@ -100,7 +100,7 @@ Landing page - section 1 styling
     margin-top : 12%; 
     margin-left: 20%;
     height: auto; width: 30%;    
-    z-index: 1;
+    z-index: 2;
 }
 
 .page-label{
@@ -109,14 +109,12 @@ Landing page - section 1 styling
     text-decoration: none;
     position:absolute;
     margin-top : 31%; 
-    margin-left: 18%;    
+    margin-left: 19%;    
 }
 
 p1{
     position: relative;
     z-index: 10;
-    margin: 0;
-    position: 0; 
 }
 
 p2{
@@ -139,6 +137,26 @@ p3{
     font-size: 0.9vw;    
     text-decoration: none;
     margin-top : 35.5%; 
-    margin-left: 28.5%;
+    margin-left: 29%;
     z-index: 10; 
+}
+
+/* -------------------------------------------------------------------------
+Landing page - second section styling
+----------------------------------------------------------------------------*/
+
+#middlebg {
+    position: absolute;
+    margin-top: 30%;
+    margin-left : -5%;
+    margin-right : -5%;
+    z-index: 0;    
+}
+
+#leftshape {
+    position: absolute;
+    margin-top:52%;
+    margin-left:12%;
+    height: auto; width: 20%;    
+    z-index: 2;
 }
