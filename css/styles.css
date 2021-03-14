@@ -167,13 +167,13 @@ Landing page - second section styling
     font-size: 3.3vw;    
     text-decoration: none;
     position:absolute;
-    margin-top : 55%; 
-    margin-left: 60%;    
+    margin-top : 58%; 
+    margin-left: 57%;    
 }
 
 #skills{
     position: absolute;
-    margin-top:62%;
+    margin-top:65%;
     margin-left:54%;
     height: auto; width: 37%;    
     z-index: 2;
@@ -197,14 +197,14 @@ Landing page - thrid section styling
     font-size: 3.3vw;    
     text-decoration: none;
     position:absolute;
-    margin-top : 102%; 
+    margin-top : 107%; 
     margin-left: 12%;    
 }
 
 #tools{
     position: absolute;
     height: auto; width: 70%;
-    margin-top: 120%; 
+    margin-top: 127%; 
     margin-left: 16%;
     z-index:2
 }
@@ -212,8 +212,8 @@ Landing page - thrid section styling
 #bottomshape{
     position: absolute;
     height: auto; width: 55%;
-    margin-top: 107%; 
-    margin-left: 19%;
+    margin-top: 112%; 
+    margin-left: 22%;
     transform: rotate(200deg);
     opacity: 0.5;
     z-index:1
