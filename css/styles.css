@@ -20,7 +20,7 @@ body {
     background-color: #0e0e0e;
     margin: 0;
     overflow-x: hidden;
-    overflow-y:scroll;
+    overflow-y: scroll;
 }
 
 /* -------------------------------------------------------------------------
@@ -29,8 +29,9 @@ logo styling
 
 #logo {
     position: absolute;
-    margin : 0.5% 0 0 1%;
-    height: auto; width: 8%;     
+    margin : 0.9vh 0 0 0.5vw;
+    height: auto; width: 8%;
+    min-width: 150px;   
     z-index: 4;
 }
 
@@ -42,7 +43,8 @@ Navigation bar styling
     position: absolute;
     object-fit: cover;
     margin : -7%;
-    height: auto; width: auto;
+    height:auto; width: auto;
+    min-height: 155px;
     z-index: 3;
 }
 
@@ -256,3 +258,4 @@ Bottom bar styling
     width: 2.4%; height: auto;
     z-index: 2; 
 }
+
