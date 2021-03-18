@@ -15,7 +15,8 @@ html {
 }
 
 body {
-    height: 100%;
+    position: relative;
+    min-height: 100%;
     background-color: #0e0e0e;
     margin: 0;
     overflow-x: hidden;
@@ -26,11 +27,23 @@ body {
 Background styling
 ----------------------------------------------------------------------------*/
 
-#blogbg{
-
-    position: absolute;
+#blogbg {
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;      
+    position: fixed;
+    top: 0;
+    left: 0;
     z-index: 1;
-}
+ }
+  
+  @media screen and (max-width: 1024px) { /* Specific to this particular image */
+    img.bg {
+      left: 50%;
+      margin-left: -512px;   /* 50% */
+    }
+  }
 
 /* -------------------------------------------------------------------------
 logo styling
@@ -168,37 +181,3 @@ Article styling
 /* -------------------------------------------------------------------------
 Bottom bar styling
 ----------------------------------------------------------------------------*/
-
-.bottom-bar-container p3{
-    position: absolute;
-    font-weight: 300;
-    font-size: 0.9vw;    
-    text-decoration: none;
-    margin-top : 166%; 
-    margin-left: 42%;
-    z-index: 10;     
-}
-
-#github{
-    position: absolute;
-    margin-top: 168%;
-    margin-left: 43%;
-    width: 4.1%; height: auto;
-    z-index: 2; 
-}
-
-#linkedin{
-    position: absolute;
-    margin-top: 168.1%;
-    margin-left: 48.3%;
-    width: 2.5%; height: auto;
-    z-index: 2; 
-}
-
-#steam{
-    position: absolute;
-    margin-top: 168.1%;
-    margin-left: 53.1%;
-    width: 2.4%; height: auto;
-    z-index: 2; 
-}
