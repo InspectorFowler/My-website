@@ -1,4 +1,3 @@
-
 /* -------------------------------------------------------------------------
 Top level body and HTML styling 
 ----------------------------------------------------------------------------*/
@@ -8,7 +7,7 @@ Top level body and HTML styling
     background: transparent; 
 }
 
-html {
+html {    
     height: 100%;
     color: #fff;
     margin: 0;
@@ -16,48 +15,82 @@ html {
 }
 
 body {
-    height: 100%;
+    min-height: 100%;
     background-color: #0e0e0e;
     margin: 0;
+    padding: 0;
     overflow-x: hidden;
-    overflow-y: scroll;
+}
+
+.page-container{
+    position: relative;
+    min-height: 100%;
+    margin: 0;;
+    z-index: 3;
+}
+
+.content-wrapper{
+    padding-bottom: 100px;
+    margin: 0;    
 }
 
 /* -------------------------------------------------------------------------
-logo styling
+Background styling
 ----------------------------------------------------------------------------*/
 
-#logo {
+#lpbg {
+    width: 100%;
+    height: auto;      
     position: absolute;
-    margin : 0.5% 0 0 0.5%;
-    height: auto; width: 9%;
-    z-index: 4;
-}
+    object-fit: cover;
+    margin: 0 -5.25% 0 -0.25%;
+    padding: 0;
+    top: 0;
+    left: 0;
+    z-index: 1;
+ }
 
 /* -------------------------------------------------------------------------
 Navigation bar styling
 ----------------------------------------------------------------------------*/
 
-#navbar {
-    position: absolute;
-    object-fit: cover;
-    margin : -7%;
-    height:auto; width: auto;
-    z-index: 3;
+.nav-container{
+    position: fixed;
+    left: 0;
+    top:0;
+    margin:0; padding:0;
+    height: 65px; width: 100%;
+    background-color: #141414;
+    -moz-box-shadow:    7px 7px 10px 0px #000;
+    -webkit-box-shadow: 7px 7px 10px 0px #000;
+    box-shadow:         7px 7px 10px 0px #000;
+    z-index: 8;
+}
+
+#logo {
+    position: fixed;
+    margin : 5px 0 0 5px;
+    height: 50px; 
+    width: auto;
+    z-index: 7;
 }
 
 nav ul {
+    position: fixed;
+    right: 0;
     list-style-type: none;
-    margin-top: 1.3%;
-    margin-right: 3%;
+    margin-top: 25px;
+    margin-right: 20px;
     float: right;
+    z-index: 7; 
 }
 
 nav ul li {
     float : left;
     margin-left: 5vw;
     margin-right: 0.5vw;
-    font-size: 0.75vw;
+    font-size: 0.95em;
+    font-weight: 600;
     
 }
 
@@ -67,7 +100,7 @@ nav ul li a {
     transition: all 0.3s ease 0s;
     cursor: pointer;      
     text-decoration: none;
-    z-index: 10; 
+    z-index: 7; 
 }
 
 nav ul li a:hover {
@@ -78,14 +111,6 @@ nav ul li a:hover {
 Landing page - top section styling
 ----------------------------------------------------------------------------*/
 
-#topbg {
-    position: absolute;
-    margin-top: -27%;
-    margin-left : -5%;
-    margin-right : -5%;
-    z-index: 1;    
-}
-
 #rightshape {
     position: absolute; 
     top : 0px; right: 0px;
@@ -94,11 +119,10 @@ Landing page - top section styling
     z-index: 2;
 }
 
-#topshape {
-    
+#topshape {    
     display: block;
     position: absolute; 
-    margin-top : 12%; 
+    top : 20%; 
     margin-left: 20%;
     height: auto; width: 30%;    
     z-index: 2;
@@ -109,7 +133,7 @@ Landing page - top section styling
     font-size: 3.3vw;    
     text-decoration: none;
     position:absolute;
-    margin-top : 31%; 
+    top : 50%; 
     margin-left: 19%;    
 }
 
@@ -135,24 +159,16 @@ Landing page - top section styling
 .page-first-container p3{
     position: absolute;
     font-weight: 300;
-    font-size: 0.9vw;    
+    font-size: 0.9vw;
+    left:35%;  
+    top:56%;
     text-decoration: none;
-    margin-top : 35.5%; 
-    margin-left: 29%;
     z-index: 10; 
 }
 
 /* -------------------------------------------------------------------------
 Landing page - second section styling
 ----------------------------------------------------------------------------*/
-
-#middlebg {
-    position: absolute;
-    margin-top: 30%;
-    margin-left : -5%;
-    margin-right : -5%;
-    z-index: 0;    
-}
 
 #leftshape {
     position: absolute;
@@ -183,15 +199,6 @@ Landing page - second section styling
 Landing page - thrid section styling
 ----------------------------------------------------------------------------*/
 
-#bottombg {
-    position: absolute;
-    margin-top: 80%;
-    padding-bottom: 8%;
-    margin-left : -5%;
-    margin-right : -5%;
-    z-index: 0;    
-}
-
 .page-third-container .text-container{
     font-weight: 600;
     font-size: 3.3vw;    
@@ -220,40 +227,72 @@ Landing page - thrid section styling
 }
 
 /* -------------------------------------------------------------------------
-Bottom bar styling
+Footer bar styling
 ----------------------------------------------------------------------------*/
 
-.bottom-bar-container p3{
+.footer {    
+    z-index: 10;
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background-image: url(../img/landingpage/bottombar.svg);
+    object-fit: cover;
+    color: white;
+    text-align: center;
+ }
+
+ .footer-wrapper{
+     position: relative;
+     margin: 0 auto;
+ }
+
+ p3{
     position: absolute;
+    text-align: center;
+    margin-top: 15px;
+    margin-left: -120px ;
     font-weight: 300;
-    font-size: 0.9vw;    
+    font-size: 1em;    
     text-decoration: none;
-    margin-top : 166%; 
-    margin-left: 42%;
-    z-index: 10;     
 }
+
+.social-icons {
+    position: absolute;
+    display: flex;
+    width: 250px;
+    margin-top: 40px;
+    margin-left: -135px ;
+    left:50%;    
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;  
+  }
 
 #github{
     position: absolute;
-    margin-top: 168%;
-    margin-left: 43%;
-    width: 4.1%; height: auto;
-    z-index: 2; 
+    width: 60px; height: auto;
+    display: flex;
+    flex:1;
 }
 
 #linkedin{
     position: absolute;
-    margin-top: 168.1%;
-    margin-left: 48.3%;
-    width: 2.5%; height: auto;
-    z-index: 2; 
+    margin-top: 2px;
+    margin-left: 3px ;
+    width: 35px; height: auto;
+    display: flex;
+    flex:1;
 }
 
 #steam{
     position: absolute;
-    margin-top: 168.1%;
-    margin-left: 53.1%;
-    width: 2.4%; height: auto;
-    z-index: 2; 
+    margin-top: 2px;
+    width: 35px; height: auto;
+    display: flex;
+    flex:1;
 }
-
