@@ -39,14 +39,16 @@ Background styling
 ----------------------------------------------------------------------------*/
 
 #lpbg {
-    width: 100%;
+    width: 105%;
     height: auto;      
     position: absolute;
+    display: block;
     object-fit: cover;
-    margin: 0 -5.25% 0 -0.25%;
     padding: 0;
+    left: 0;
     top: 0;
     left: 0;
+    margin-left: -2.5%;
     z-index: 1;
  }
 
@@ -108,24 +110,32 @@ nav ul li a:hover {
 }
 
 /* -------------------------------------------------------------------------
-Landing page - top section styling
+Landing page - first section styling
 ----------------------------------------------------------------------------*/
+
+.page-first-container{
+    position: relative;
+    width:100%;
+    height: 55vw;
+    margin : 0;
+    padding:0;
+    top: 70px; left: 0px;
+    z-index: 2;
+}
 
 #rightshape {
     position: absolute; 
     top : 0px; right: 0px;
     margin : -1% -1% auto;
     height: auto; width: 31%;    
-    z-index: 2;
 }
 
 #topshape {    
     display: block;
     position: absolute; 
-    top : 20%; 
-    margin-left: 20%;
+    top : 22%; 
+    left: 20%;
     height: auto; width: 30%;    
-    z-index: 2;
 }
 
 .page-first-container .text-container{
@@ -133,8 +143,8 @@ Landing page - top section styling
     font-size: 3.3vw;    
     text-decoration: none;
     position:absolute;
-    top : 50%; 
-    margin-left: 19%;    
+    top : 55%; 
+    margin-left: 18%;    
 }
 
 .text-container p1{
@@ -160,8 +170,8 @@ Landing page - top section styling
     position: absolute;
     font-weight: 300;
     font-size: 0.9vw;
-    left:35%;  
-    top:56%;
+    left:36%;  
+    top:61%;
     text-decoration: none;
     z-index: 10; 
 }
@@ -170,27 +180,36 @@ Landing page - top section styling
 Landing page - second section styling
 ----------------------------------------------------------------------------*/
 
+.page-second-container{
+    position: relative;
+    width:100%;
+    height: 55vw;
+    margin : 0;
+    padding:0;
+    left: 0px;
+    z-index: 2;
+}
+
 #leftshape {
     position: absolute;
-    margin-top:55%;
-    margin-left:15%;
+    top:30%;
+    left:10%;
     height: auto; width: 20%;    
-    z-index: 2;
 }
 
 .page-second-container .text-container{
     font-weight: 600;
     font-size: 3.3vw;    
     text-decoration: none;
-    position:absolute;
-    margin-top : 58%; 
-    margin-left: 57%;    
+    position:absolute; 
+    top:77%;
+    right:12%;
 }
 
 #skills{
     position: absolute;
-    margin-top:65%;
-    margin-left:54%;
+    top:30%;
+    right:8%;
     height: auto; width: 37%;    
     z-index: 2;
 }
