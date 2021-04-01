@@ -68,12 +68,43 @@ Navigation bar styling
     z-index: 8;
 }
 
-#logo {
+.logo-container{    
     position: fixed;
-    margin : 5px 0 0 5px;
-    height: 50px; 
+    display: flex;
+    margin: 0;
+    margin: 5px 0 0 5px;
+    width: 250px;
+    height: 60px;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+
+#logo {
+    position: relative;
+    margin : 0;
+    height: 55px; 
     width: auto;
-    z-index: 7;
+}
+
+.logo-text{
+    position: relative;
+    display: grid;
+    margin : 0 0 0 10px;
+    height: 55px; 
+    width: 200px;
+}
+
+.logo-text t1{
+    margin-top: 10px;
+    font-size: 1.05em;
+    font-weight: 800;
+}
+
+.logo-text t2{
+    margin-top: -8px;
+    font-size: 0.75em;
+    font-weight: 100;
 }
 
 nav ul {
