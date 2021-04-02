@@ -257,8 +257,14 @@ Contact styling
     margin-left: 5px;
 }
 
+input {
+    font-size:1.1vw;
+    color : #fff;
+    padding-left: 3%;
+}
+ 
 .input-text input{
-    margin-left: 15px;
+    margin-left: 25px;
     margin-top: -2px;
     background-color: #212529;
     border: none;
@@ -275,8 +281,15 @@ Contact styling
     margin-left: 2.21vw;
 }
 
+textarea {
+    font-size:1.1vw;
+    color : #fff;
+    padding-left: 3%;
+    padding-top: 3%;
+}
+
 .input-text textarea{
-    margin-left: 15px;
+    margin-left: 25px;
     margin-top: -2px;
     background-color: #212529;
     border: none;
@@ -289,23 +302,23 @@ Contact styling
     margin-left: 0.27vw;
 }
 
-.send-container{
-    position: relative;
-    width : 32vw;
-    height: 2.5vw;
-    z-index: 10;
-}
-
 button{
-    position: relative;
-    margin-left: 24vw;
-    width: 8vw;
+    position: absolute;
+    margin-right: auto;    
+    width: 7vw;
     height: 2.5vw;
     font-size: 1vw;
     font-weight:700;
     background-color: white;
     border: none;
-    border-radius: 4px;    
+    border-radius: 4px; 
+}
+   
+
+button:hover {
+    background-color:  #212529;
+    color: white; 
+    cursor: pointer;   
 }
 
 /* -------------------------------------------------------------------------
