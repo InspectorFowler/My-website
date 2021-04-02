@@ -215,7 +215,7 @@ About section styling
     position: relative; 
     display: block;
     font-size: 2.2vw;
-    font-weight: 800;
+    font-weight: 1000;
     top: 0;
     left: 0;
 }
@@ -237,11 +237,75 @@ About section styling
     font-size: 1vw;
 }
 
+/* -------------------------------------------------------------------------
+Contact styling
+----------------------------------------------------------------------------*/
+
 .contact-box{
     position: relative;
     width: auto;
     height: 60%;
     margin-top: 5%;
+}
+
+.input-label{
+    display: flex;
+    font-size: 1.2vw;
+}
+
+.input-text{
+    margin-left: 5px;
+}
+
+.input-text input{
+    margin-left: 15px;
+    margin-top: -2px;
+    background-color: #212529;
+    border: none;
+    border-radius: 5px;
+    width: 25vw;
+    height: 3vw;
+}
+
+.name-input-text{
+    margin-left: 2vw;
+}
+
+.email-input-text{
+    margin-left: 2.21vw;
+}
+
+.input-text textarea{
+    margin-left: 15px;
+    margin-top: -2px;
+    background-color: #212529;
+    border: none;
+    border-radius: 5px;
+    width: 25vw;
+    height: 15vw;
+}
+
+.message-input-text{
+    margin-left: 0.27vw;
+}
+
+.send-container{
+    position: relative;
+    width : 32vw;
+    height: 2.5vw;
+    z-index: 10;
+}
+
+button{
+    position: relative;
+    margin-left: 24vw;
+    width: 8vw;
+    height: 2.5vw;
+    font-size: 1vw;
+    font-weight:700;
+    background-color: white;
+    border: none;
+    border-radius: 4px;    
 }
 
 /* -------------------------------------------------------------------------

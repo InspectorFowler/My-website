@@ -26,7 +26,7 @@
                         <t2>FOWLER</t2>   
                     </div>
                 </div>
-                
+
                 <nav>
                     <ul>
                         <li><a href="index.html">HOME</a></li>
@@ -52,40 +52,48 @@
                         </div>
                     </div>
                     <div class="description-box">
-                        I like solving problems with data, whether it is helping a global enterprise or just understanding myself better. My interests include predictive modelling, data mining and ethical artificial intelligence. 
+                        I like solving problems with data, whether it is helping a global enterprise or just understanding 
+                        myself better. My interests include predictive modelling, data mining and ethical artificial intelligence. 
                         <br></br>
                         When i’m not working with data i like to read about greek mythology, build legos, woodwork and take care of my home.
                         <br></br>
                         If you would like to connect drop me a message below !
                     </div>
                     <div class="contact-box">
-                        <div style="font-family: Roboto; border-radius: 5px; padding: 1px 30px; width: 75%;">
-                            <form accept-charset="UTF-8" action="https://getform.io/f/{your-form-endpoint-goes-here}" method="POST" enctype="multipart/form-data"  target="_blank" id="wpform">
-                               <div>
-                                  <label>Full Name</label>
-                                  <div>
-                                     <input style="margin-top: 5px; background-color: #fff; height:35px; width:235px;" type="text" name="first_name" placeholder="Enter your name and surname" required="required">
-                                  </div>
-                               </div>
-                               <br>
-                               <div>
-                                  <label>Email address</label>
-                                  <div>
-                                     <input style="margin-top: 5px;background-color: #fff; height:35px; width:235px;" type="email" name="email" placeholder="Enter your email address" required="required">
-                                  </div>
-                               </div>
-                               <br>
-                               <div>
-                                  <label>Your Message</label>
-                                  <div>
-                                     <textarea style="margin-top: 5px;background-color: #fff; height:50px; width:235px;" type="text" name="message" placeholder="Enter your message" required="required"></textarea>
-                                  </div>
-                               </div>
-                               <br>
-                               <input type="hidden" name="utf8" value="✓">
-                               <button style="font-size:14px; background-color:#6b7ddf; color:#fff; font-weight:bold; padding:10px 35px; margin: 5px 0 0 0;" type="submit">SUBMIT</button>
-                            </form>
-                         </div>
+                        <form accept-charset="UTF-8" action="https://getform.io/f/{your-form-endpoint-goes-here}" method="POST" enctype="multipart/form-data"  target="_blank" id="wpform">
+                            <div class="input-label" type = 'label'>
+                                <p1>Name</p1>                                
+                                <div class="input-text">
+                                    <div class="name-input-text">
+                                        <input type="text" name="name" required="required">    
+                                    </div>                                                                    
+                                </div>                                
+                            </div>
+                            <br>
+                            <div class="input-label" type = 'label'>
+                                <p1>Email</p1>                                
+                                <div class="input-text">
+                                    <div class="email-input-text">
+                                        <input type="email" name="email" required="required">    
+                                    </div>                                                                    
+                                </div>                                
+                            </div>                                                   
+                            <br>
+                            <div class="input-label" type = 'label'>
+                                <p1>Message</p1>                                
+                                <div class="input-text">
+                                    <div class="message-input-text">
+                                        <textarea type="text" name="message" required="required"></textarea>
+                                    </div>
+                                </div>                                
+                            </div>
+                            <br>
+                            <input type="hidden" name="utf8" value="✓">
+
+                            <div class="send-container">
+                                <button type="submit">SEND</button>
+                            </div>                            
+                        </form>
                     </div>
                 </div>
 
