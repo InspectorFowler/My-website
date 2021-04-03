@@ -86,6 +86,11 @@ Navigation bar styling
     width: auto;
 }
 
+#logo:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+
 .logo-text{
     position: relative;
     display: grid;

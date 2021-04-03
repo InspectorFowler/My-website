@@ -86,6 +86,11 @@ Navigation bar styling
     width: auto;
 }
 
+#logo:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+
 .logo-text{
     position: relative;
     display: grid;
@@ -230,7 +235,7 @@ Article styling
     margin-right: 10px;
     padding: 2px;
     height: 10px; width: 2800px;
-    font-size: 1.3em;
+    font-size: 1.2em;
     font-weight: 600;
 }
 
@@ -240,6 +245,7 @@ Article styling
     margin-right: 10px;
     margin-bottom: 10px;
     height: 330px; width: 280px;
+    font-size: 0.95em;
 }
 
 .a1-img{

@@ -87,6 +87,11 @@ Navigation bar styling
     width: auto;
 }
 
+#logo:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+
 .logo-text{
     position: relative;
     display: grid;
@@ -286,9 +291,11 @@ input {
 }
  
 .input-text input{
+    font-family: 'Montserrat';
     margin-left: 25px;
     margin-top: -2px;
     background-color: #212529;
+    font-size:1vw;
     border: none;
     border-radius: 5px;
     width: 25vw;
@@ -303,14 +310,16 @@ input {
     margin-left: 2.21vw;
 }
 
-textarea {
-    font-size:1.1vw;
-    color : #fff;
-    padding-left: 3%;
-    padding-top: 3%;
+.message-input-text{
+    margin-left: 0.27vw;
 }
 
 .input-text textarea{
+    font-family: 'Montserrat';
+    font-size:1vw;
+    color : #fff;
+    padding-left: 3%;
+    padding-top: 3%;
     margin-left: 25px;
     margin-top: -2px;
     background-color: #212529;
@@ -320,9 +329,7 @@ textarea {
     height: 15vw;
 }
 
-.message-input-text{
-    margin-left: 0.27vw;
-}
+
 
 button{
     position: absolute;
