@@ -139,6 +139,28 @@ nav ul li a:hover {
     color: gray;    
 }
 
+nav ul li a::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    transform-origin: right top;
+    transform: scale(0, 1);
+    transition: color 0.1s,transform 0.2s ease-out;
+}
+nav ul li a:active::before {
+    background-color:white;
+}
+
+nav ul li a:hover::before, a:focus::before {
+    transform-origin: left top;
+    transform: scale(1, 1);
+}
+
 /* -------------------------------------------------------------------------
 Top section styling
 ----------------------------------------------------------------------------*/
