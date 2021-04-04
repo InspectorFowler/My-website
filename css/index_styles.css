@@ -11,15 +11,14 @@ html {
     height: 100%;
     color: #fff;
     margin: 0;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat';    
 }
 
 body {
     min-height: 100%;
     background-color: #0e0e0e;
     margin: 0;
-    padding: 0;
-    overflow-x: hidden;
+    padding: 0;    
 }
 
 .page-container{
@@ -27,6 +26,7 @@ body {
     min-height: 100%;
     margin: 0;;
     z-index: 3;
+    overflow-x: hidden;
 }
 
 .content-wrapper{
@@ -49,6 +49,20 @@ Background styling
     margin-left: -2.5%;
     z-index: 1;
  }
+
+ @media screen and (max-width: 500px) {
+    #lpbg {
+        height: 200%;
+        position: absolute;
+        display:inline-block;
+        object-fit: cover;
+        padding: 0;
+        left: 0;
+        top: 0;
+        margin-left: -2.5%;
+        z-index: 1;
+    }
+}
 
 /* -------------------------------------------------------------------------
 Navigation bar styling
@@ -162,6 +176,10 @@ nav ul li a:active::before {
 nav ul li a:hover::before, a:focus::before {
     transform-origin: left top;
     transform: scale(1, 1);
+}
+
+@media screen and (max-width: 500px) {
+
 }
 
 /* -------------------------------------------------------------------------
