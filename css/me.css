@@ -51,6 +51,13 @@ Background styling
     z-index: 1;
  }
 
+ @media screen and (max-width: 500px) {
+    #mebg {
+        width: 200%;
+        left: -75%;
+    }
+}
+
 /* -------------------------------------------------------------------------
 Navigation bar styling
 ----------------------------------------------------------------------------*/
@@ -166,6 +173,41 @@ nav ul li a:hover::before, a:focus::before {
     transform: scale(1, 1);
 }
 
+@media screen and (max-width: 500px) {
+
+    .nav-container{
+        height: 45px; width: 100%;
+    } 
+    
+    #logo {
+        height: 35px; 
+    }
+
+    .logo-text{
+        height: 42px; 
+        width: 175px;
+    }
+    
+    .logo-text t1{
+        margin-top: 3px;
+        font-size: 0.9em;
+    }
+    
+    .logo-text t2{
+        margin-top: -8px;
+        font-size: 0.6em;
+    }
+    
+    nav ul {
+        margin-top: 17px;
+        margin-right: 10px;
+    }
+    
+    nav ul li {
+        font-size: 0.65em;
+    }  
+}
+
 /* -------------------------------------------------------------------------
 Top section styling
 ----------------------------------------------------------------------------*/
@@ -188,6 +230,7 @@ Top section styling
     max-width: 100%;
     max-height: 100%;
     height: auto;
+    opacity: 0.7;
 }
 
 .welcome-container a{
@@ -199,11 +242,28 @@ Top section styling
     font-weight: bolder;
 }
 
+@media screen and (max-width: 500px) {
+    
+    #topshape{
+        max-width: 120%;
+        max-height: 120%;
+        left: 5%;        
+    }
+
+    .welcome-container a{
+        position: absolute;
+        display: inline-block;
+        top: 29%;
+        left: 38%;
+        font-size: 8vw;
+    }
+}
+
 /* -------------------------------------------------------------------------
 About section styling
 ----------------------------------------------------------------------------*/
 
-.about-container{
+.about-container{    
     position: absolute;
     align-self: center;
     align-content: center;
@@ -262,6 +322,42 @@ About section styling
     margin-top: 3%;
     height: 26%;
     font-size: 1vw;
+}
+
+@media screen and (max-width: 500px) {
+    .about-container{
+        
+        width: 50%;
+        height: 48%;
+        top:30%;
+        left:25%;
+    }
+
+    #profile-pic{
+        width: 55%;
+        margin-left: 22%;
+    } 
+
+    .title-box{
+        text-align: center;
+        top: 115%;
+        left: -4%;
+        width: 100%;
+        height: 20%;
+    }
+
+    .title-box p1{
+        font-size: 4.5vw; 
+    }
+
+    .title-box p2{
+        font-size: 2.5vw; 
+    }
+
+    .description-box{
+        margin-top: 40%;
+        font-size: 2.5vw;
+    }
 }
 
 /* -------------------------------------------------------------------------
@@ -329,8 +425,6 @@ input {
     height: 15vw;
 }
 
-
-
 button{
     position: absolute;
     margin-right: auto;    
@@ -341,13 +435,52 @@ button{
     background-color: white;
     border: none;
     border-radius: 4px; 
-}
-   
+}  
 
 button:hover {
     background-color:  #212529;
     color: white; 
     cursor: pointer;   
+}
+
+
+@media screen and (max-width: 500px) {
+    
+    .contact-box{
+        height: 55%;
+        top: 10%;
+    }
+
+    .input-label{
+        display: inline-block;
+        font-size: 2.2vw;
+    }
+
+    .input-text input{
+        font-size:2.2vw;
+        width: 45vw;
+        height: 6vw;
+        margin-top: 5%;
+        margin-left: -7%;
+        margin-bottom: 4%;
+    }
+
+    .input-text textarea{
+        font-size:2.2vw;        
+        width: 45vw;
+        height: 26vw;
+        margin-top: 5%;
+        margin-left: -3%;
+        margin-bottom: 4%;
+    }
+
+    button{
+        width: 12vw;
+        height: 5vw;
+        font-size: 2.2vw;
+        right: 0;
+        margin-right: 7%;
+    }      
 }
 
 /* -------------------------------------------------------------------------
@@ -419,4 +552,34 @@ Footer bar styling
     width: 35px; height: auto;
     display: flex;
     flex:1;
+}
+
+@media screen and (max-width: 500px) {
+    
+    .footer {           
+        height: 75px;
+     }  
+     
+     p3{
+        margin-top: 15px;
+        margin-left: -95px ;
+        font-size: 0.75em;    
+    }
+
+    #github{
+        width: 40px;
+        left: 25%; 
+    }
+    
+    #linkedin{    
+        margin-top: 1px;
+        margin-left: 3px ;
+        width: 25px;
+    }
+    
+    #steam{
+        margin-top: 1px;
+        width: 25px;
+        right: 15%; 
+    }
 }
